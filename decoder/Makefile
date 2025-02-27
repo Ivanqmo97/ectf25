@@ -182,7 +182,7 @@ IPATH += .
 IPATH += include
 # eCTF Crypto Example
 ifeq ($(CRYPTO_EXAMPLE), 1)
-IPATH += wolfssl
+IPATH += $(PROJECT_ROOT)/wolfssl
 endif
 IPATH := $(IPATH)
 
@@ -432,4 +432,4 @@ clean:
 #	Extend the functionality of the "clean" recipe here
 
 # The rule to clean out all the build products.
-distclean: clean libclean
+distclean: clean libclean

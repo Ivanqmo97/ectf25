@@ -23,7 +23,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     wget \
     libtool \
     texinfo \
-    unzip    
+    unzip \
+    libwolfssl-dev   
 
 # Install MSDK
 RUN apt-get install -y unzip && \
@@ -38,5 +39,4 @@ WORKDIR /decoder
 ENTRYPOINT ["bash", "-c", "make release DECODER_ID=${DECODER_ID} && cp build/max78000.elf build/max78000.bin /out"]
 
 # Sample run command:
-# docker run -v ./decoder/:/decoder -v ./global.secrets:/global.secrets:ro -v ./deadbeef_build:/out -e DECODER_ID=0xdeadbeef build-decoder
-
+# docker run -v ./decoder/:/decoder -v ./global.secrets:/global.secrets:ro -v ./deadbeef_build:/out -e DECODER_ID=0xdeadbeef build-decoder
