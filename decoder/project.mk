@@ -20,7 +20,7 @@ MFLOAT_ABI=soft
 
 IPATH+=../deployment
 IPATH+=inc/
-IPATH+=wolfssl/wolfssl
+IPATH+=wolfssl2/wolfssl
 VPATH+=src/
 
 # ****************** eCTF Bootloader *******************
