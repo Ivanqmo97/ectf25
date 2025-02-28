@@ -20,6 +20,7 @@ MFLOAT_ABI=soft
 
 IPATH+=../deployment
 IPATH+=inc/
+IPATH+=/ruta/al/proyecto/wolfssl
 VPATH+=src/
 
 # ****************** eCTF Bootloader *******************
